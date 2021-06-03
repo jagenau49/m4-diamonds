@@ -45,8 +45,17 @@ public class Logic
      */
     public void process(int size) {
         // TODO -- add your code here
-        mOut.println(upOrBottomLine(size));//Upper Line
-        mOut.println(upOrBottomLine(size));//Bottom Line
+        int totalLine=size*2+1;
+
+
+        /*for (int actualLine=0; actualLine<totalLine;actualLine++){
+            if(actualLine==0 || actualLine==totalLine-1){
+                mOut.println(upOrBottomLine(size));//Upper Line
+            }else if(actualLine==1||actualLine==totalLine-2){
+
+            }
+        };*/
+
 
         
     }
@@ -60,6 +69,25 @@ public class Logic
         return "+"+middleLine+"+";
 
     }
+    public String line1(int size){
+        int rowWidth=(size*2)+2;
+        String middleLine="";
+        int locationOfSlash=size;
+        int locationOfBackslash=size+1;
+        for(int j=1;j<rowWidth-1;j++){
+            if(j==locationOfSlash){
+                middleLine=middleLine.concat("/");
+
+            }else if(j==locationOfBackslash){
+                middleLine=middleLine.concat("\\");
+            }else{
+           middleLine=middleLine.concat(" ");
+
+        };
+        };
+        return "|"+middleLine+"|";
+
+    };
 
     
 }
