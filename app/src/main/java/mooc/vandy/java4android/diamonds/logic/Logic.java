@@ -49,8 +49,17 @@ public class Logic
         int totalLine=size*2+1;
 
         //Test basi
+        for (int lineNumber=0;lineNumber <totalLine;lineNumber++){
+            if (lineNumber==0||lineNumber==totalLine-1){
+                mOut.println(upOrBottomLine(size));
+            }else if(lineNumber==1||lineNumber==totalLine-2){
+                mOut.println(lineFirstOrLast(size,lineNumber,rowWidth));
+            }else{
+                mOut.println(oddOrEvenLine(size,lineNumber,rowWidth));
+            }
+        }
 
-        mOut.println(oddOrEvenLine(size,2,rowWidth));
+
         //Test sonu
 
 
@@ -104,6 +113,7 @@ public class Logic
     public String oddOrEvenLine(int size, int actualLine, int rowWidth){
         String fillingChar=null;
         String middleFilling="";
+
         int locationOfSlash=size-actualLine+1;
         int locationOfBackslash=rowWidth-locationOfSlash-1;
         if(actualLine%2==0){//even Line: '-'
@@ -113,10 +123,16 @@ fillingChar="-";
         };
         for (int t=1;t<rowWidth-1;t++){
             if(t==locationOfSlash){
-                middleFilling=middleFilling.concat("/");
+                if(actualLine==size) {//middle line
+                    middleFilling=middleFilling.concat("<");
+                }else{
+                middleFilling=middleFilling.concat("/");}
 
             }else if(t==locationOfBackslash){
-                middleFilling=middleFilling.concat("\\");
+                if(actualLine==size) {//middle line
+                    middleFilling=middleFilling.concat(">");
+                }else{
+                    middleFilling=middleFilling.concat("\\");}
             }else if(t>locationOfSlash&&t<locationOfBackslash) {
                 middleFilling=middleFilling.concat(fillingChar);
             }else{
@@ -125,6 +141,7 @@ fillingChar="-";
             };
 
         };
+
         return "|"+middleFilling+"|";
     };
 
