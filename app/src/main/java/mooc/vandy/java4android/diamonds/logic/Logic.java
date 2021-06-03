@@ -47,6 +47,11 @@ public class Logic
         // TODO -- add your code here
         int totalLine=size*2+1;
 
+        //Test basi
+        mOut.println(lineFirstOrLast(size,1));
+        mOut.println(lineFirstOrLast(size,size-1));
+        //Test sonu
+
 
         /*for (int actualLine=0; actualLine<totalLine;actualLine++){
             if(actualLine==0 || actualLine==totalLine-1){
@@ -69,11 +74,17 @@ public class Logic
         return "+"+middleLine+"+";
 
     }
-    public String line1(int size){
+    public String lineFirstOrLast(int size, int actualLine){
         int rowWidth=(size*2)+2;
         String middleLine="";
-        int locationOfSlash=size;
-        int locationOfBackslash=size+1;
+        int locationOfSlash,locationOfBackslash;
+        if (actualLine==1) {
+            locationOfSlash = size;
+            locationOfBackslash = size + 1;
+        }else{
+            locationOfSlash = size+1;
+            locationOfBackslash = size;
+        }
         for(int j=1;j<rowWidth-1;j++){
             if(j==locationOfSlash){
                 middleLine=middleLine.concat("/");
