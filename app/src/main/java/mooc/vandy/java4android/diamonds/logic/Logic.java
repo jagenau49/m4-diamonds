@@ -107,15 +107,29 @@ public class Logic
 
         };
         };
-        return "|"+middleLine+"|";
+        if (size==1){
+            return "|<>|";
+        }else {
+            return "|" + middleLine + "|";
+        }
 
     };
     public String oddOrEvenLine(int size, int actualLine, int rowWidth){
         String fillingChar=null;
         String middleFilling="";
+        int locationOfBackslash,locationOfSlash;
 
-        int locationOfSlash=size-actualLine+1;
-        int locationOfBackslash=rowWidth-locationOfSlash-1;
+        if (actualLine>size){
+             locationOfBackslash  =actualLine -size + 1;
+             locationOfSlash = rowWidth - locationOfBackslash - 1;
+
+        }else {
+
+             locationOfSlash = size - actualLine + 1;
+             locationOfBackslash = rowWidth - locationOfSlash - 1;
+        }
+
+
         if(actualLine%2==0){//even Line: '-'
 fillingChar="-";
         }else{ //odd Line:'='
@@ -133,16 +147,20 @@ fillingChar="-";
                     middleFilling=middleFilling.concat(">");
                 }else{
                     middleFilling=middleFilling.concat("\\");}
-            }else if(t>locationOfSlash&&t<locationOfBackslash) {
+            }else if(actualLine<=size&&t>locationOfSlash&&t<locationOfBackslash) {
                 middleFilling=middleFilling.concat(fillingChar);
-            }else{
+            }else if (actualLine>size&&t<locationOfSlash&&t>locationOfBackslash){
+                middleFilling=middleFilling.concat(fillingChar);
+        }else{
                 middleFilling=middleFilling.concat(" ");
 
             };
 
         };
 
-        return "|"+middleFilling+"|";
+
+                return "|"+middleFilling+"|";
+
     };
 
     

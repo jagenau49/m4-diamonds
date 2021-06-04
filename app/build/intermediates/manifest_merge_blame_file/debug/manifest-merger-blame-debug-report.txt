@@ -23,23 +23,22 @@
 16-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:8:9-41
 17        android:supportsRtl="true"
 17-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:9:9-35
-18        android:testOnly="true"
-19        android:theme="@style/AppTheme" >
-19-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:10:9-40
-20        <activity android:name="mooc.vandy.java4android.diamonds.ui.MainActivity" >
-20-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:11:9-17:20
-20-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:11:19-82
-21            <intent-filter>
-21-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:12:13-16:29
-22                <action android:name="android.intent.action.MAIN" />
-22-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:13:17-69
-22-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:13:25-66
-23
-24                <category android:name="android.intent.category.LAUNCHER" />
-24-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:15:17-77
-24-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:15:27-74
-25            </intent-filter>
-26        </activity>
-27    </application>
-28
-29</manifest>
+18        android:theme="@style/AppTheme" >
+18-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:10:9-40
+19        <activity android:name="mooc.vandy.java4android.diamonds.ui.MainActivity" >
+19-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:11:9-17:20
+19-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:11:19-82
+20            <intent-filter>
+20-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:12:13-16:29
+21                <action android:name="android.intent.action.MAIN" />
+21-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:13:17-69
+21-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:13:25-66
+22
+23                <category android:name="android.intent.category.LAUNCHER" />
+23-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:15:17-77
+23-->/home/jagenau49/Downloads/BMEVdcXATHyBFXXFwLx8gg_1406e2b6198e4512b2c5e13cb460f616_m4-diamonds-assignment/m4-diamonds/app/src/main/AndroidManifest.xml:15:27-74
+24            </intent-filter>
+25        </activity>
+26    </application>
+27
+28</manifest>
