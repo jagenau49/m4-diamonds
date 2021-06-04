@@ -48,7 +48,7 @@ public class Logic
         int rowWidth=size*2+2;
         int totalLine=size*2+1;
 
-        //Test basi
+
         for (int lineNumber=0;lineNumber <totalLine;lineNumber++){
             if (lineNumber==0||lineNumber==totalLine-1){
                 mOut.println(upOrBottomLine(size));
@@ -60,16 +60,10 @@ public class Logic
         }
 
 
-        //Test sonu
 
 
-        /*for (int actualLine=0; actualLine<totalLine;actualLine++){
-            if(actualLine==0 || actualLine==totalLine-1){
-                mOut.println(upOrBottomLine(size));//Upper Line
-            }else if(actualLine==1||actualLine==totalLine-2){
 
-            }
-        };*/
+
 
 
         
